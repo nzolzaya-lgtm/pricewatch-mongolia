@@ -240,6 +240,45 @@ with regions_tab:
                 note = "<div class='note' style='margin:12px 0'><strong>Your basket vs most affordable:</strong> Your basket {money(user_total_f,2)} vs most affordable {money(affordable_total,2)} — {above_below} the most affordable place by {money(diff,2)}</div>"
                 st.markdown(note, unsafe_allow_html=True)
 
+        # --- Price spread analysis ---
+        if not available.empty and quote and quote.complete:
+            st.markdown('<div class="note" style="margin:18px 0"><strong>Price spread analysis:</strong> product price ranges across regions</div>', unsafe_allow_html=True)
+            # Calculate price spread for each product
+            spread_rows = []
+            for prod_code in catalogue['products'][:10]:  # Top 10 products by availability
+                prod_data = ranked[ranked.product_code == prod_code]
+                if len(prod_data) > 1:
+                    prices = prod_data.price_mnt.dropna()
+                    if len(prices) > 0:
+                        highest_price = prices.max()
+                        lowest_price = prices.min()
+                        if highest_price > 0:
+                            spread_pct = ((highest_price - lowest_price) / lowest_price) * 100
+                            spread_rows.append({
+                                'product': prod_data.iloc[0]['product_name'] if 'product_name' in prod_data.columns else f'Product {prod_code}',
+                                'lowest': money(lowest_price, 0),
+                                'highest': money(highest_price, 0),
+                                'spread': f'{spread_pct:.0f}%',
+                            })
+            if spread_rows:
+                spread_df = pd.DataFrame(spread_rows)
+                st.dataframe(
+                    spread_df,
+                    column_config={
+                        'product': 'Product',
+                        'lowest': 'Lowest',
+                        'highest': 'Highest',
+                        'spread': 'Spread',
+                    },
+                    hide_index=True,
+                    use_container_width=True,
+                )
+                st.caption('Shows price range across regions for the 10 most available products. Wider spreads indicate greater price disparity.')
+            else:
+                st.info('Not enough price data available for spread analysis this month.')
+        else:
+            st.info('Add products to your basket and select a month to see price spread analysis.')
+
 with sources_tab:
     head('Real data. A clear source.', 'The app includes a reproducible snapshot of Mongolia’s official regional price table.')
     st.markdown(f'<div class="source-card"><strong>National Statistics Office of Mongolia</strong><br>{escape(snapshot["title"])}<br>Table: {snapshot["table_id"]}<br>Coverage: {month_label(snapshot["first_month"])} to {month_label(snapshot["latest_month"])}<br>Retrieved: {RETRIEVED.strftime("%d %B %Y, %H:%M")} · Ulaanbaatar time<br><a href="{escape(snapshot["source_url"],quote=True)}" target="_blank" rel="noopener">Open the official source table</a></div>',unsafe_allow_html=True)
