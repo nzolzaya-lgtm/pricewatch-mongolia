@@ -233,7 +233,12 @@ with regions_tab:
         st.dataframe(table[['Region','Basket estimate · MNT','Known subtotal · MNT','Prices available','Coverage']],hide_index=True,use_container_width=True)
         download_file('Download regional comparison',table[['Region','Basket estimate · MNT','Known subtotal · MNT','Prices available','Coverage']].to_csv(index=False),f'PriceWatch_regions_{month}.csv')
         st.caption('Only complete baskets are ranked. A subtotal with missing items is not compared against a full basket.')\n\n        # --- Affordable market suggestions ---\n        if not available.empty:\n            # Show the 3 most affordable places\n            affordable = available.nsmallest(3, 'total').copy()\n            affordable['Region'] = affordable.region_code.map(region_name)\n            st.markdown('<div class="note" style="margin:18px 0"><strong>More affordable markets:</strong></div>', unsafe_allow_html=True)\n            for _, row in affordable.iterrows():\n                st.markdown(f"<div style='font-size:.875rem; line-height:1.5'>{escape(row['Region'])} · {money(row['total'],2)} (saved <strong>{money(high.total - row['total'],2)}</strong> vs highest)</div>", unsafe_allow_html=True)\n\n            # Show savings opportunity vs user's basket\n            if quote and quote.complete:\n                user_total = float(quote.total)\n                st.markdown(f"<div class="note" style="margin:12px 0"><strong>Your basket vs most affordable:</strong> Your basket {money(user_total,2)} vs most affordable {money(affordable.iloc[0]['total'],2)} — {'you're above' if user_total > affordable.iloc[0]['total'] else 'you're below'} the most affordable place by {money(abs(user_total - affordable.iloc[0]['total']),2)}</div>", unsafe_allow_html=True)\n        else:\n            st.info('Add products to your basket to see affordable market suggestions.')
-    else: st.info('Add products to your basket before comparing places.')
+                user_total_f = float(user_total)
+                affordable_total = affordable.iloc[0]["total"]
+                above_below = chr(39)+"you're above" if user_total_f > affordable_total else chr(39)+"you're below"
+                diff = abs(user_total_f - affordable_total)
+                note = f"<div class='note' style='margin:12px 0'><strong>Your basket vs most affordable:</strong> Your basket {money(user_total_f,2)} vs most affordable {money(affordable_total,2)} — {above_below} the most affordable place by {money(diff,2)}</div>"
+                st.markdown(note, unsafe_allow_html=True)
 
 with sources_tab:
     head('Real data. A clear source.', 'The app includes a reproducible snapshot of Mongolia’s official regional price table.')
