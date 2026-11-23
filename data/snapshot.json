@@ -1,0 +1,24 @@
+{
+  "title": "AVERAGE PRICE OF MAIN SELECTED COMMODITIES, by type of goods and services, aimags and the Capital and by month",
+  "table_id": "DT_NSO_0600_019V1.px",
+  "source": "National Statistics Office of Mongolia",
+  "source_url": "https://data.1212.mn/pxweb/en/NSO/NSO__Economy,%20environment__Consumer%20Price%20Index/DT_NSO_0600_019V1.px/",
+  "api_url": "https://data.1212.mn/api/v1/en/NSO/Economy%2C%20environment/Consumer%20Price%20Index/DT_NSO_0600_019V1.px",
+  "retrieved_at_utc": "2026-11-23T08:23:21+00:00",
+  "frequency": "monthly",
+  "currency": "MNT",
+  "first_month": "2010-12",
+  "latest_month": "2026-10",
+  "regions": 22,
+  "products": 43,
+  "grocery_products": 27,
+  "row_count": 180686,
+  "value_counts": {
+    "observed": 179405,
+    "missing": 1281
+  },
+  "raw_response_sha256": "4c4402afce2d820faadfea82101e4706472b87a73258899df9b9d28e7597c7b4",
+  "prices_csv_sha256": "484aac9a74927c87e0c8aea1b80d728c9d1c5c58d96553d7ed28f4e764af79b9",
+  "missing_policy": "Missing, nonfinite, and nonpositive source values are unavailable. No imputation, carry-forward, currency conversion, or synthetic prices.",
+  "scope": "Regional monthly average prices. Individual shop prices, promotions, delivery fees, and stock are not present."
+}

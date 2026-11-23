@@ -1,0 +1,503 @@
+{
+  "regions": [
+    {
+      "code": "265",
+      "name": "Arkhangai",
+      "name_mn": "Архангай"
+    },
+    {
+      "code": "183",
+      "name": "Bayan-Ulgii",
+      "name_mn": "Баян-Өлгий"
+    },
+    {
+      "code": "264",
+      "name": "Bayankhongor",
+      "name_mn": "Баянхонгор"
+    },
+    {
+      "code": "263",
+      "name": "Bulgan",
+      "name_mn": "Булган"
+    },
+    {
+      "code": "345",
+      "name": "Darkhan-uul",
+      "name_mn": "Дархан-Уул"
+    },
+    {
+      "code": "421",
+      "name": "Dornod",
+      "name_mn": "Дорнод"
+    },
+    {
+      "code": "344",
+      "name": "Dornogovi",
+      "name_mn": "Дорноговь"
+    },
+    {
+      "code": "348",
+      "name": "Dundgovi",
+      "name_mn": "Дундговь"
+    },
+    {
+      "code": "182",
+      "name": "Govi-Altai",
+      "name_mn": "Говь-Алтай"
+    },
+    {
+      "code": "342",
+      "name": "Govisumber",
+      "name_mn": "Говьсүмбэр"
+    },
+    {
+      "code": "423",
+      "name": "Khentii",
+      "name_mn": "Хэнтий"
+    },
+    {
+      "code": "184",
+      "name": "Khovd",
+      "name_mn": "Ховд"
+    },
+    {
+      "code": "267",
+      "name": "Khuvsgul",
+      "name_mn": "Хөвсгөл"
+    },
+    {
+      "code": "261",
+      "name": "Orkhon",
+      "name_mn": "Орхон"
+    },
+    {
+      "code": "343",
+      "name": "Selenge",
+      "name_mn": "Сэлэнгэ"
+    },
+    {
+      "code": "422",
+      "name": "Sukhbaatar",
+      "name_mn": "Сүхбаатар"
+    },
+    {
+      "code": "341",
+      "name": "Tuv",
+      "name_mn": "Төв"
+    },
+    {
+      "code": "511",
+      "name": "Ulaanbaatar city",
+      "name_mn": "Улаанбаатар"
+    },
+    {
+      "code": "346",
+      "name": "Umnugovi",
+      "name_mn": "Өмнөговь"
+    },
+    {
+      "code": "185",
+      "name": "Uvs",
+      "name_mn": "Увс"
+    },
+    {
+      "code": "262",
+      "name": "Uvurkhangai",
+      "name_mn": "Өвөрхангай"
+    },
+    {
+      "code": "181",
+      "name": "Zavkhan",
+      "name_mn": "Завхан"
+    }
+  ],
+  "products": [
+    {
+      "code": "11",
+      "name": "Cow milk · plain",
+      "name_mn": "Сүү, үнээний, задгай, л",
+      "source_label": "Milk, cows, plain, litre",
+      "category": "Dairy & eggs",
+      "unit": "litre",
+      "grocery": true
+    },
+    {
+      "code": "14",
+      "name": "Egg",
+      "name_mn": "Өндөг, ш, дотоодын",
+      "source_label": "Egg, pieces, дотоодын",
+      "category": "Dairy & eggs",
+      "unit": "piece",
+      "grocery": true
+    },
+    {
+      "code": "12",
+      "name": "Milk · carton",
+      "name_mn": "Сүү, савласан, хайрцагтай, 1 л, дотоодын үйлдвэрийн",
+      "source_label": "Milk, packed, carton box ,1 litre, domestic",
+      "category": "Dairy & eggs",
+      "unit": "litre",
+      "grocery": true
+    },
+    {
+      "code": "13",
+      "name": "Plain yogurt",
+      "name_mn": "Тараг, задгай, 1 л",
+      "source_label": "Yogurt, plain, 1 litre",
+      "category": "Dairy & eggs",
+      "unit": "litre",
+      "grocery": true
+    },
+    {
+      "code": "19",
+      "name": "Cabbage",
+      "name_mn": "Байцаа, кг, импортын",
+      "source_label": "Cabbage, kg, imported",
+      "category": "Fruit & vegetables",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "22",
+      "name": "Carrots",
+      "name_mn": "Лууван, кг, импортын",
+      "source_label": "Carrots, kg, imported",
+      "category": "Fruit & vegetables",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "24",
+      "name": "Garlic",
+      "name_mn": "Сармис, 1 булцуу, БНХАУ",
+      "source_label": "Garlic, 1 bulb, imported",
+      "category": "Fruit & vegetables",
+      "unit": "bulb",
+      "grocery": true
+    },
+    {
+      "code": "23",
+      "name": "Onion",
+      "name_mn": "Сонгино, кг, БНХАУ",
+      "source_label": "Onion, kg, imported",
+      "category": "Fruit & vegetables",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "16",
+      "name": "Orange",
+      "name_mn": "Мандарин, кг, импортын",
+      "source_label": "Orange, kg, imported",
+      "category": "Fruit & vegetables",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "25",
+      "name": "Potato · domestic",
+      "name_mn": "Төмс, дотоод, кг",
+      "source_label": "Potato, domestic, kg",
+      "category": "Fruit & vegetables",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "18",
+      "name": "Raisins",
+      "name_mn": "Yзэм, кг, импортын",
+      "source_label": "Dried grapes, kg, imported",
+      "category": "Fruit & vegetables",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "21",
+      "name": "Sweet pepper",
+      "name_mn": "Амтат чинжүү, кг, импортын",
+      "source_label": "Sweet pepper, kg, imported",
+      "category": "Fruit & vegetables",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "20",
+      "name": "Tomatoes",
+      "name_mn": "Улаан лооль, бөөрөнхий, кг, импортын",
+      "source_label": "Tomatoes, kg, imported",
+      "category": "Fruit & vegetables",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "17",
+      "name": "Yellow apples",
+      "name_mn": "Алим, шар, кг, импортын",
+      "source_label": "Apples, yellow, kg, imported",
+      "category": "Fruit & vegetables",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "2",
+      "name": "Flour · first grade",
+      "name_mn": "Гурил, 1-р зэрэг, савласан, кг, дотоодын үйлдвэрийн",
+      "source_label": "Flour, first grade, packaged, kg, domestic",
+      "category": "Grains & bread",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "3",
+      "name": "Flour · second grade",
+      "name_mn": "Гурил, 2-р зэрэг, савласан, кг, дотоодын үйлдвэрийн",
+      "source_label": "Flour, second grade, packaged, kg, domestic",
+      "category": "Grains & bread",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "4",
+      "name": "Millet",
+      "name_mn": "Шар будаа, задгай, кг, импортын",
+      "source_label": "Millet, plain, kg, imported",
+      "category": "Grains & bread",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "0",
+      "name": "Rice",
+      "name_mn": "Цагаан будаа, кг",
+      "source_label": "Rice, kg",
+      "category": "Grains & bread",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "1",
+      "name": "Sliced bread",
+      "name_mn": "Талх, зүсээгүй, ш",
+      "source_label": "Bread, sliced, pieces",
+      "category": "Grains & bread",
+      "unit": "piece",
+      "grocery": true
+    },
+    {
+      "code": "5",
+      "name": "Beef · bone-in",
+      "name_mn": "Yхрийн мах, ястай, кг",
+      "source_label": "Beef, with bones, kg",
+      "category": "Meat & poultry",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "6",
+      "name": "Beef · boneless",
+      "name_mn": "Yхрийн мах, гуяны цул, кг",
+      "source_label": "Beef, without bones, kg",
+      "category": "Meat & poultry",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "9",
+      "name": "Chicken thigh",
+      "name_mn": "Тахианы мах, гуя, кг, импортын",
+      "source_label": "Chicken, thigh, kg, imported",
+      "category": "Meat & poultry",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "8",
+      "name": "Goat meat · bone-in",
+      "name_mn": "Ямааны мах, ястай, кг",
+      "source_label": "Goat meat, with bones, kg",
+      "category": "Meat & poultry",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "10",
+      "name": "Horse meat · bone-in",
+      "name_mn": "Адууны мах, ястай, кг",
+      "source_label": "Horse meat, with bones, kg",
+      "category": "Meat & poultry",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "7",
+      "name": "Mutton · bone-in",
+      "name_mn": "Хонины мах, ястай, кг",
+      "source_label": "Mutton, with bones, kg",
+      "category": "Meat & poultry",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "26",
+      "name": "Sugar",
+      "name_mn": "Элсэн чихэр, задгай, кг, импортын",
+      "source_label": "Sugar, plain, kg, imported",
+      "category": "Pantry",
+      "unit": "kg",
+      "grocery": true
+    },
+    {
+      "code": "15",
+      "name": "Vegetable oil",
+      "name_mn": "Ургамлын тос, 1 л, импортын",
+      "source_label": "Vegetable oil, 1 litre, imported",
+      "category": "Pantry",
+      "unit": "litre",
+      "grocery": true
+    },
+    {
+      "code": "37",
+      "name": "AI-92 gasoline",
+      "name_mn": "Бензин, А-92, 1 литр",
+      "source_label": "Gasoline, AI-92, 1 litre",
+      "category": "Household & fuel",
+      "unit": "litre",
+      "grocery": false
+    },
+    {
+      "code": "31",
+      "name": "Cement",
+      "name_mn": "Цемент, 1уут, БНХАУ",
+      "source_label": "Cement, 1 bag",
+      "category": "Household & fuel",
+      "unit": "bag",
+      "grocery": false
+    },
+    {
+      "code": "38",
+      "name": "Diesel fuel",
+      "name_mn": "Дизелийн түлш, 1 литр",
+      "source_label": "Diesel fuel, 1 litre",
+      "category": "Household & fuel",
+      "unit": "litre",
+      "grocery": false
+    },
+    {
+      "code": "35",
+      "name": "Dishwashing liquid · 500 ml",
+      "name_mn": "Аяга, таваг угаагч шингэн, 500мл",
+      "source_label": "Dishwashing Liquid, 500 ml",
+      "category": "Household & fuel",
+      "unit": "bottle",
+      "grocery": false
+    },
+    {
+      "code": "32",
+      "name": "Fuelwood",
+      "name_mn": "Түлшний мод, шуудайгаар",
+      "source_label": "Fuelwood, one sack",
+      "category": "Household & fuel",
+      "unit": "sack",
+      "grocery": false
+    },
+    {
+      "code": "33",
+      "name": "Laundry soap",
+      "name_mn": "Эдийн саван",
+      "source_label": "Laundry soap",
+      "category": "Household & fuel",
+      "unit": "source unit",
+      "grocery": false
+    },
+    {
+      "code": "36",
+      "name": "Matches · 10 boxes",
+      "name_mn": "Шүдэнз, толгой, ОХУ",
+      "source_label": "Matches, 10 box, ОХУ",
+      "category": "Household & fuel",
+      "unit": "10-box pack",
+      "grocery": false
+    },
+    {
+      "code": "42",
+      "name": "Soap",
+      "name_mn": "Гар нүүрийн саван",
+      "source_label": "Soap",
+      "category": "Household & fuel",
+      "unit": "source unit",
+      "grocery": false
+    },
+    {
+      "code": "34",
+      "name": "Washing powder · 800 g",
+      "name_mn": "Угаалгын нунтаг, 800 гр",
+      "source_label": "Washing powder, 800 g",
+      "category": "Household & fuel",
+      "unit": "pack",
+      "grocery": false
+    },
+    {
+      "code": "28",
+      "name": "Beer · 0.5 litre",
+      "name_mn": "Шар айраг, 0.5 л, шилтэй",
+      "source_label": "Beer, 0.5 litre, bottled",
+      "category": "Other goods",
+      "unit": "bottle",
+      "grocery": false
+    },
+    {
+      "code": "30",
+      "name": "Cigarettes · domestic",
+      "name_mn": "Янжуур тамхи,  дотоод",
+      "source_label": "Cigarettes, domestic",
+      "category": "Other goods",
+      "unit": "source unit",
+      "grocery": false
+    },
+    {
+      "code": "29",
+      "name": "Cigarettes · imported",
+      "name_mn": "Янжуур тамхи,  импортын",
+      "source_label": "Cigarettes, imported",
+      "category": "Other goods",
+      "unit": "source unit",
+      "grocery": false
+    },
+    {
+      "code": "27",
+      "name": "Vodka · 0.75 litre",
+      "name_mn": "Цагаан архи, 0.75л",
+      "source_label": "Vodka, 0.75 litre",
+      "category": "Other goods",
+      "unit": "bottle",
+      "grocery": false
+    },
+    {
+      "code": "39",
+      "name": "Canteen food",
+      "name_mn": "Гуанзны хоолны үнэ",
+      "source_label": "Canteen food",
+      "category": "Services",
+      "unit": "source meal",
+      "grocery": false
+    },
+    {
+      "code": "40",
+      "name": "Men’s haircut",
+      "name_mn": "Эрэгтэй үс засуулах хөлс",
+      "source_label": "Mens haircuts",
+      "category": "Services",
+      "unit": "haircut",
+      "grocery": false
+    },
+    {
+      "code": "41",
+      "name": "Women’s simple haircut",
+      "name_mn": "Эмэгтэй үс засуулах хөлс, энгийн тайралт",
+      "source_label": "Womens haircuts, simple cuts",
+      "category": "Services",
+      "unit": "haircut",
+      "grocery": false
+    }
+  ]
+}
